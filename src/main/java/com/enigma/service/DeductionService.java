@@ -1,7 +1,6 @@
 package com.enigma.service;
 
 import com.enigma.model.Suspect;
-
 import java.util.List;
 
 public class DeductionService {
@@ -32,11 +31,16 @@ public class DeductionService {
 
         System.out.println("\n===== DEDUCTION =====");
 
+        if (suspects == null || suspects.isEmpty()) {
+            System.out.println("No suspects available.");
+            return;
+        }
+
         for (Suspect suspect : suspects) {
 
             System.out.println(
                     suspect.getName()
-                            + " → Suspicion Level: "
+                            + " -> Suspicion Level: "
                             + suspect.getSuspicionLevel()
             );
         }
@@ -45,8 +49,10 @@ public class DeductionService {
 
         if (mostSuspicious != null) {
 
-            System.out.println("\nMost Suspicious Person: "
-                    + mostSuspicious.getName());
+            System.out.println(
+                    "\nMost Suspicious Person: "
+                            + mostSuspicious.getName()
+            );
 
             System.out.println(
                     "Suspicion Level: "
@@ -55,10 +61,14 @@ public class DeductionService {
         }
     }
 
-    // Check whether the detective has identified the culprit
+    // Check whether the selected suspect is the culprit
     public boolean checkCulprit(Suspect suspect) {
 
-        return suspect != null && suspect.isGuilty();
+        if (suspect == null) {
+            return false;
+        }
+
+        return suspect.isGuilty();
     }
 
     // Give a deduction message
@@ -70,4 +80,15 @@ public class DeductionService {
 
         if (suspect.getSuspicionLevel() >= 80) {
             return suspect.getName()
-                    + " is
+                    + " is highly suspicious. Investigate further!";
+        }
+
+        if (suspect.getSuspicionLevel() >= 50) {
+            return suspect.getName()
+                    + " is moderately suspicious.";
+        }
+
+        return suspect.getName()
+                + " currently has a low suspicion level.";
+    }
+}
