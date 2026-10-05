@@ -1,4 +1,4 @@
 package com.enigma.model;
 
-public class evidence {
+public class Evidence {
 }
