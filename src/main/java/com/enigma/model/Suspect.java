@@ -21,7 +21,6 @@ public class Suspect extends Person {
         this.suspicionLevel = suspicionLevel;
         this.guilty = guilty;
     }
-
     // Getters
 
     public String getMotive() {
