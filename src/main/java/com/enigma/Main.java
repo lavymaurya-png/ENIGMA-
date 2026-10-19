@@ -78,7 +78,7 @@ public class Main {
         // 6. CREATE VICTIM / MISSING PERSON
 
         Victim victim = new Victim(
-                "Han Seo-jun",
+                "Evan",
                 38,
                 "Male",
                 "Unknown",
@@ -121,7 +121,7 @@ public class Main {
         // 8. CREATE SUSPECTS
 
         Suspect minjae = new Suspect(
-                "Kang Min-jae",
+                "Noah",
                 35,
                 "Male",
                 "Wanted to stop Seo-jun from revealing the old case.",
@@ -132,7 +132,7 @@ public class Main {
         );
 
         Suspect sooah = new Suspect(
-                "Lee Soo-ah",
+                "Nora",
                 31,
                 "Female",
                 "Wanted to keep her connection to Yuna secret.",
@@ -143,7 +143,7 @@ public class Main {
         );
 
         Suspect jihoon = new Suspect(
-                "Choi Ji-hoon",
+                "Dean",
                 42,
                 "Male",
                 "Wanted to prevent the original evidence from exposing him.",
@@ -154,7 +154,7 @@ public class Main {
         );
 
         Suspect nari = new Suspect(
-                "Han Na-ri",
+                "ivy",
                 27,
                 "Female",
                 "Wanted to protect her family and Yuna's secrets.",
