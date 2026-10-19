@@ -5,11 +5,10 @@ import com.enigma.model.Case;
 import com.enigma.model.Suspect;
 import com.enigma.model.Victim;
 import com.enigma.model.Location;
-import com.enigma.model.Clue;
 
+import com.enigma.service.DeductionService;
 import com.enigma.service.InvestigationService;
 import com.enigma.service.InterrogationService;
-import com.enigma.service.DeductionService;
 import com.enigma.service.ScoreService;
 
 import java.util.Scanner;
