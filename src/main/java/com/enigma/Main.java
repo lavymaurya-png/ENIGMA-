@@ -67,7 +67,7 @@ public class Main {
         Case enigmaCase = new Case(
                 "011",
                 "The Last Broadcast",
-                "Producer Han Seo-jun has disappeared from "
+                "Producer Evan has disappeared from "
                         + "Studio 7 during a three-minute blackout. "
                         + "The detective must investigate the suspects, "
                         + "collect evidence and uncover the truth."
@@ -119,29 +119,29 @@ public class Main {
 
         // 8. CREATE SUSPECTS
 
-        Suspect minjae = new Suspect(
+        Suspect Noah = new Suspect(
                 "Noah",
                 35,
                 "Male",
-                "Wanted to stop Seo-jun from revealing the old case.",
+                "Wanted to stop Evan from revealing the old case.",
                 "Claims he was in the cafeteria.",
-                "Seo-jun's business partner",
+                "Evan's business partner",
                 35,
                 false
         );
 
-        Suspect sooah = new Suspect(
+        Suspect Nora = new Suspect(
                 "Nora",
                 31,
                 "Female",
-                "Wanted to keep her connection to Yuna secret.",
+                "Wanted to keep her connection to Maya secret.",
                 "Claims she stayed in her dressing room.",
-                "Friend of Yuna",
+                "Friend of Maya",
                 40,
                 false
         );
 
-        Suspect jihoon = new Suspect(
+        Suspect Dean = new Suspect(
                 "Dean",
                 42,
                 "Male",
@@ -152,21 +152,21 @@ public class Main {
                 true
         );
 
-        Suspect nari = new Suspect(
-                "ivy",
+        Suspect Ivy = new Suspect(
+                "Ivy",
                 27,
                 "Female",
-                "Wanted to protect her family and Yuna's secrets.",
+                "Wanted to protect her family and maya's secrets.",
                 "Claims she was in the station lobby.",
-                "Seo-jun's younger sister",
+                "Maya's younger sister",
                 30,
                 false
         );
 
-        enigmaCase.addSuspect(minjae);
-        enigmaCase.addSuspect(sooah);
-        enigmaCase.addSuspect(jihoon);
-        enigmaCase.addSuspect(nari);
+        enigmaCase.addSuspect(Noah);
+        enigmaCase.addSuspect(Nora);
+        enigmaCase.addSuspect(Dean);
+        enigmaCase.addSuspect(Ivy);
 
 
         // 9. CREATE SERVICES
